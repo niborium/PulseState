@@ -72,6 +72,10 @@ We welcome contributions from the community! If you'd like to contribute to Puls
 
 We'll review your pull request and provide feedback. If your changes are accepted, we'll merge them into the main branch of the repository.
 
+## Where can i read more how to use the library?  
+Visit [PulseState wiki](https://github.com/niborium/PulseState/wiki).  
+Here you can read brief explanation of all functions, how to work with multiple states, how to use PulseState with React context and other useful information.
+
 ## License
 
 PulseState is licensed under the MIT License.
