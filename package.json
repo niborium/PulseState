@@ -1,0 +1,12 @@
+{
+  "name": "pulse-state",
+  "version": "1.0.0",
+  "description": "PulseState is a state management library that allows you to manage and update the state of your application, and provides the ability to subscribe to state changes through event listeners. It also includes a simple state history feature, which allows you to undo changes to the state and restore previous versions of the state. PulseState supports storing any type of data in the state object.",
+  "main": "state.js",
+  "dependencies": {},
+  "keywords": [
+    "state",
+    "management"
+  ],
+  "license": "MIT"
+}
