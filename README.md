@@ -9,6 +9,7 @@ PulseState is a state management library that allows you to manage and update th
 - **Undo changes to the state:** PulseState includes a simple state history feature that allows you to undo changes to the state and restore previous versions of the state. You can use the `undo` function to go back to a previous state, and the `clearHistory` function to clear the state history.
 - **Store any type of data:** PulseState supports storing any type of data in the state object. You can use `setState` to set the state to a string, number, array, or any other type of data that JavaScript supports.
 - **Batch updates to the state:** PulseState includes a `batchUpdate` function that allows you to batch updates to the state and only call listeners once at the end of the batch.
+- **Persist state across page refreshes:** PulseState includes a `persistState` function that allows you to persist the state across page refreshes using `localStorage`.
 
 ## Functions
 
@@ -18,6 +19,7 @@ PulseState is a state management library that allows you to manage and update th
 - `undo()`: sets the state object to the previous state object on the `history` array, and calls all listeners subscribed to state changes
 - `clearHistory()`: clears the `history` array of previous state objects
 - `batchUpdate(updateFunction)`: takes an update function that expects the current state as its argument and returns an object with the new state values. The `batchUpdate` function creates a copy of the current state and passes it to the update function, which returns an object with the new state values. The `setState` function is then called with the new state values at the end of the batch, so listeners are only called once.
+- `persistState(key)`: takes a key parameter and uses `localStorage` to persist the state across page refreshes. When the function is called, it checks `localStorage` for a saved state with the specified `key`, and sets the state to the saved state if one is found. It then subscribes to state changes and saves the state to `localStorage` whenever it changes.
 
 ## Getting Started
 
@@ -34,7 +36,10 @@ import {
   undo,
   clearHistory,
   batchUpdate,
+  persistState,
 } from 'pulsestate';
+
+persistState('myApp');
 
 setState({ count: 0 });
 
@@ -52,6 +57,8 @@ batchUpdate((state) => {
 
 undo();
 ```
+
+In this example, the `persistState` function is used to persist the state across page refreshes using the key `'myApp'`. Whenever the state changes, the new state is saved to `localStorage`. When the page is refreshed or reopened, the saved state is loaded and used as the initial state.
 
 ## Contributing
 
