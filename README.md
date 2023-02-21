@@ -19,8 +19,8 @@ PulseState is a state management library that allows you to manage and update th
 
 ## Getting Started
 
-To get started with PulseState, you can install it using npm:
-npm install pulse-state
+To get started with PulseState, you can install it using npm:  
+```npm install pulse-state```
 
 Then, you can import the state management functions as an ES module in your code:
 
