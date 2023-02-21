@@ -36,11 +36,10 @@ subscribe(state => {
 setState(42);
 
 undo();
+```
 
-
-License
+## License  
 PulseState is licensed under the MIT License.
 
 
 Feel free to customize the file to fit your project's needs, and don't hesitate to let me know if you have any other questions!
-```
