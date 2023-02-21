@@ -20,16 +20,16 @@ PulseState is a state management library that allows you to manage and update th
 ## Getting Started
 
 To get started with PulseState, you can install it using npm:  
-```npm install pulse-state```
+`npm install pulsestate`
 
 Then, you can import the state management functions as an ES module in your code:
 
 ```javascript
-import { getState, setState, subscribe, undo, clearHistory } from 'pulse-state';
+import { getState, setState, subscribe, undo, clearHistory } from 'pulsestate';
 
 setState('hello world');
 
-subscribe(state => {
+subscribe((state) => {
   console.log('State changed:', state);
 });
 
@@ -38,8 +38,8 @@ setState(42);
 undo();
 ```
 
-## License  
-PulseState is licensed under the MIT License.
+## License
 
+PulseState is licensed under the MIT License.
 
 Feel free to customize the file to fit your project's needs, and don't hesitate to let me know if you have any other questions!
