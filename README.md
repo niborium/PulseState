@@ -20,7 +20,8 @@ PulseState is a state management library that allows you to manage and update th
 ## Getting Started
 
 To get started with PulseState, you can install it using npm:  
-`npm install pulsestate`
+```npm install pulsestate```
+
 
 Then, you can import the state management functions as an ES module in your code:
 
@@ -38,8 +39,18 @@ setState(42);
 undo();
 ```
 
-## License
+## Contributing  
+We welcome contributions from the community! If you'd like to contribute to PulseState, here's how to get started:
 
+1) Fork the PulseState repository to your own GitHub account.
+2) Clone your fork of the repository to your local machine.
+3) Make any changes you'd like to the code, test them thoroughly, and commit your changes to your local repository.
+4) Push your changes to your fork of the repository.
+5) Create a pull request to submit your changes for review. Be sure to include a clear description of your changes and why they're needed.
+
+We'll review your pull request and provide feedback. If your changes are accepted, we'll merge them into the main branch of the repository.
+
+## License  
 PulseState is licensed under the MIT License.
 
 Feel free to customize the file to fit your project's needs, and don't hesitate to let me know if you have any other questions!
